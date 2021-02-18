@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        GHGH
+    </title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <style>
+        .sudo {
+
+            padding: 34px;
+            column-gap: normal;
+            background-color: khaki;
+            transition: transform.2s;
+            width: 160px;
+            height: 320px;
+            padding-left: 45px;
+
+        }
+
+        .sudo1 {
+            padding: 34px;
+            column-gap: normal;
+            background-color: blue;
+            transition: transform.2s;
+            width: 160px;
+            height: 320px;
+
+        }
+
+        .sudo2 {
+            padding: 34px;
+            column-gap: normal;
+            background-color: pink;
+            transition: transform.2s;
+            width: 160px;
+            height: 320px;
+
+        }
+
+
+
+
+
+        .sudo:hover {
+
+            -ms-transform: scale(4.6);
+            -webkit-transform: scale(1.4);
+            transform: scale(1.1);
+        }
+
+        .sudo1:hover {
+
+            -ms-transform: scale(4.6);
+            -webkit-transform: scale(1.4);
+            transform: scale(1.1);
+        }
+
+        .sudo2:hover {
+
+            -ms-transform: scale(4.6);
+            -webkit-transform: scale(1.4);
+            transform: scale(1.1);
+        }
+
+        columns {
+            float: left;
+        }
+
+        div {
+            float: left;
+        }
+
+        .Post1 {
+            width: 600px;
+            height: 350px;
+            background-color: blue;
+        }
+
+        .Post2 {
+            width: 600px;
+            height: 380px;
+            background-color: orange;
+        }
+
+        .Post3 {
+            width: 600px;
+            height: 380px;
+            background-color: plum;
+        }
+
+        .Post4 {
+
+            width: 600px;
+            height: 350px;
+            background-color: pink;
+        }
+
+        .Post5 {
+            width: 600px;
+            height: 350px;
+            background-color: yellowgreen;
+        }
+
+        .Post8 {
+            width: 300px;
+            height: 350px;
+            background-color: white;
+        }
+
+        .Post6 {
+            width: 600px;
+            height: 350px;
+            background-color: khaki;
+
+        }
+
+        .Post7 {
+            width: 600px;
+            height: 350px;
+            background-color: white;
+        }
+
+        img {
+            margin: 0px;
+            height: 600px;
+            width: 1200px;
+        }
+
+        .enterprice {
+            font-size: 15px;
+            height: 300px;
+            background-color: white;
+            width: 120px;
+            border-radius: 12px;
+            box-shadow: thistle;
+        }
+
+        .enterprice:hover {
+
+            -ms-transform: scale(4.6);
+            -webkit-transform: scale(1.4);
+            transform: scale(1.1);
+        }
+
+        .IMAGE:hover {
+            text-align: center;
+        }
+
+        .footer {
+            height: 150px;
+            background-color: black;
+            width: 1200px;
+
+
+
+
+        }
+
+        .AWS {
+            background-color: pink;
+        }
+
+        /* 
+        .facebook {
+            background-url: 'C:\Users\HALCHAL\Desktop\PROJECT\facebook_follow_button.png';
+        } */
+
+        .IMAGE {
+            border-color: transparent;
+            border-radius: 50%;
+            height: 34px;
+        }
+
+        .tooltip1 {
+            position: relative;
+            display: inline-block;
+            /* border-bottom: 1px dotted black; */
+            /* If you want dots under the hoverable text */
+        }
+
+        /* Tooltip text */
+        .tooltip1 .tooltiptext1 {
+            visibility: hidden;
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+
+            /* Position the tooltip text */
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+
+            /* Fade in tooltip */
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Tooltip arrow */
+        .tooltip1 .tooltiptext1::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip1:hover .tooltiptext1 {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /*  tooltip1 closed */
+        .tooltip2 {
+            position: relative;
+            display: inline-block;
+            /* border-bottom: 1px dotted black; */
+            /* If you want dots under the hoverable text */
+        }
+
+        /* Tooltip text */
+        .tooltip2 .tooltiptext2 {
+            visibility: hidden;
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+
+            /* Position the tooltip text */
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+
+            /* Fade in tooltip */
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Tooltip arrow */
+        .tooltip2 .tooltiptext2::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip2:hover .tooltiptext2 {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        /* tooltip 2 closed */
+        .tooltip1 {
+            position: relative;
+            display: inline-block;
+            /* border-bottom: 1px dotted black; */
+            /* If you want dots under the hoverable text */
+        }
+
+        /* Tooltip text */
+        .tooltip1 .tooltiptext1 {
+            visibility: hidden;
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+
+            /* Position the tooltip text */
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+
+            /* Fade in tooltip */
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        /* Tooltip arrow */
+        .tooltip1 .tooltiptext1::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+
+        /* Show the tooltip text when you mouse over the tooltip container */
+        .tooltip1:hover .tooltiptext1 {
+            visibility: visible;
+            opacity: 1;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <img src="C:\Users\HALCHAL\Desktop\PROJECT\highway.jpg "> -->
+
+
+
+
+
+
+
+
+
+
+    <center>
+        <h2> Hi folks, Welcome to Sctpl :)
+    </center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <columns class="sudo">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum
+        1500s, cum incognita est a
+        printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic condimentum,
+        remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis, recentius
+        in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</columns>
+
+
+    <columns class="sudo1">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum
+        1500s, cum incognita est a
+        printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic condimentum,
+        remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis, recentius
+        in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</columns>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <columns class="sudo2">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum 1500s, cum incognita est
+        a
+        printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic condimentum,
+        remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis, recentius
+        in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</columns>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+    <!-- hower enfderrrrr -->
+
+    <h3>
+
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry'sstandard dummy text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make atype specimen book. It has survived not only five centuries, but
+        also the leap into electronic typesetting,remaining essentiallyunchanged. It was popularised in the 1960s
+        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+        publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+
+
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry'sstandard dummy text ever since the 1500s, when an unknown printer took a
+        galley of type and scrambled it to make atype specimen book. It has survived not only five centuries, but
+        also the leap into electronic typesetting,remaining essentiallyunchanged. It was popularised in the 1960s
+        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+        publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+        <!--   HWERETY THE WE START TO POST -->
+
+
+        <div class="Post1">A Post about The things and Stuff</div>
+
+        <div class="Post2">"The U.S is fast approaching $19,000,000,000,000,00"in national debt.This is mathematically
+            impossible to ever pay back
+            ...even if every American was taxed at 100%"
+            <br><br>
+            <i>__charles Goyette,The Dollar Metldown<i><br><br><span style="padding-left: 78px;">
+                        *79 million baby Boomers are about to retire,pull their
+                        money out of the economy and demand their $35 Trillion Dollars in Social Security &
+                        Medicare,<span style="padding-left: 123px;"></span>Think that through...*
+
+
+                        <i><i>Robert Kiyasaki___<i><i></span>><br><br>*23.4% of Americans are Currently Unemployed...not
+                    the
+                    9.1%
+                    they'd like you to believe.*<br><br>
+                    <i>__ShadowStats.com<i></div>
+
+        <div class="Post3">The U.S is fast approaching $19,000,000,000,000,00"in national debt.This is mathematically
+            impossible to ever pay back
+            ...even if every American was taxed at 100%"
+            <br><br>
+            <i>__charles Goyette,The Dollar Metldown<i><br><br><span style="padding-left: 78px;">
+                        *79 million baby Boomers are about to retire,pull their
+                        money out of the economy and demand their $35 Trillion Dollars in Social Security &
+                        Medicare,<span style="padding-left: 123px;"></span>Think that through...*
+
+
+                        <i><i>Robert Kiyasaki___<i><i></span>><br><br>*23.4% of Americans are Currently Unemployed...not
+                    the
+                    9.1%
+                    they'd like you to believe.*<br><br>
+                    <i>__ShadowStats.com<i></div>
+
+        <div class="Post4">A post about The thing and Stuff</div>
+
+        <div class="Post5">A post about The thing and Stuff</div>
+        <div class="Post6">The U.S is fast approaching $19,000,000,000,000,00"in national debt.This is mathematically
+            impossible to ever pay back
+            ...even if every American was taxed at 100%"
+            <br><br>
+            <i>__charles Goyette,The Dollar Metldown<i><br><br><span style="padding-left: 78px;">
+                        *79 million baby Boomers are about to retire,pull their
+                        money out of the economy and demand their $35 Trillion Dollars in Social Security &
+                        Medicare,<span style="padding-left: 123px;"></span>Think that through...*
+
+
+                        <i><i>Robert Kiyasaki___<i><i></span>><br><br>*23.4% of Americans are Currently Unemployed...not
+                    the
+                    9.1%
+                    they'd like you to believe.*<br><br>
+                    <i>__ShadowStats.com<i></div>
+        <div class="Post7"></div><br><br><br>
+
+        <div class="Post8"></div><br>
+        <!--   HERE THE ERERRERER DFG STARTS -->
+        <center>
+            <div class="enterprice">
+                <center>
+                    Enterprise<br><br>
+                    $59<br><br>
+                    <a href="C:\Users\HALCHAL\Desktop\PROJECT\Project3.html"> <input type="submit" value="Sign Up"
+                            class="AWS"></input><br><br></a>
+
+                    <br>10GB Disk Space<br>
+                    <br>100GB Monthly Bandwidth<br>
+                    <br>20 Email Accounts<br>
+                    <br>Unlimited subdomain<br>
+                </center>
+            </div>
+
+
+
+            <div class="enterprice">
+                <center>
+                    Professional<br><br>
+                    $29<br><br>
+                    <a href="C:\Users\HALCHAL\Desktop\PROJECT\Project3.html"><input type="submit" value="Sign Up"
+                            class="AWS"></input><br><br></a>
+
+                    5GB Disk Space<br><br>
+                    50GB Monthly Bandwidth<br><br>
+                    10 Email Accounts<br><br>
+                    Unlimited subdomain<br><br>
+
+
+                </center>
+            </div>
+
+
+
+
+
+
+
+            <div class="enterprice">
+                <center>
+                    Standard<br><br>
+                    $17<br><br>
+                    <a href="C:\Users\HALCHAL\Desktop\PROJECT\Project3.html"><input type="submit" value="Sign Up"
+                            class="AWS"></input><br><br></a>
+                    3GB Disk Space<br><br>
+                    25GB Monthly Bandwidth<br><br>
+                    5 Email Accounts<br><br>
+                    Unlimited subdomain<br><br>
+
+
+
+
+
+                </center>
+            </div>
+            <div class="enterprice">
+                <center>
+                    Basic<br><br>
+                    $9<br><br>
+                    <a href="C:\Users\HALCHAL\Desktop\PROJECT\Project3.html"><input type="submit" value="Sign Up"
+                            class="AWS"></input> <br><br></a>
+                    1GB Disk Space<br><br>
+                    10GB Monthly Bandwidth<br><br>
+                    2 Email Accounts<br><br>
+                    Unlimited subdomains<br><br>
+
+
+                </center>
+            </div>
+            <br><br><br><br>
+
+        </center>
+
+
+        <br><br><br>
+        <div class="footer">
+
+            <center>
+
+                <div class="tooltip2">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span class="tooltiptext2">Facebook</span>
+                    <input type="image" src="facebook_follow_button.png " class="IMAGE"></div>
+
+                <div class="tooltip2">
+                    <span class="tooltiptext2">Twitter</span>
+
+                    &nbsp; <input type="image" src="C:\Users\HALCHAL\Desktop\PROJECT\twitter.png" class="IMAGE"> </div>
+                <div class="tooltip2">
+                    <span class="tooltiptext2">GitHub</span>
+
+                    &nbsp;<input type="image" src="C:\Users\HALCHAL\Desktop\PROJECT\Github.png" class="IMAGE"></div>
+                <div class="tooltip2">
+                    <span class="tooltiptext2">Dribble</span>
+
+                    &nbsp;<input type="image" src="C:\Users\HALCHAL\Desktop\PROJECT\dribble.png" class="IMAGE"></div>
+                <div class="tooltip2">
+                    <span class="tooltiptext2">Pinterest</span>
+
+                    &nbsp;<input type="image" src="C:\Users\HALCHAL\Desktop\PROJECT\pinterest.png" class="IMAGE"></div>
+
+                <br><br><br>
+
+
+                Copyright &copy 2019 • Suven Consultants and technology pvt ltd • All rights reserved
+                <!-- </center> -->
+            </center>
+        </div>
+
+</body><br><br>
+
+</html>

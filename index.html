@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html>
+<title>
+    UI/UX Designing Page
+</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<script src="Project3 j Query.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js">    </script>
+
+<style>
+    {
+        margin: 0;
+        padding: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+
+    #main {
+        width: 131%;
+        height: 80vh;
+        background-image: url(highway.jpg);
+        background-size: cover;
+
+    }
+
+    nav {
+        width: 100%;
+        height: 70px;
+        background-color: #0001;
+        line-height: 80px;
+    }
+
+    nav ul {
+        float: right;
+        margin-right: 20px;
+    }
+
+
+    nav ul li {
+
+        list-style-type: none;
+        display: inline-block;
+        transition-delay: background-color 0.2s;
+        /* line-height: 80px; */
+
+        /* width: 100px; */
+    }
+
+    nav ul li :hover {
+        background-color: transparent;
+        transition: 2px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 40px;
+
+    }
+
+
+    .search-box {
+        position: absolute;
+        top: 8%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        background: black;
+        height: 20px;
+        border-radius: 50px;
+        padding: 10px;
+    }
+
+    .search-box:hover>.search-txt {
+        width: 240px;
+        padding: 0.6px;
+    }
+
+
+    .search-btn {
+        color: #e84118;
+        float: right;
+
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        /* background-color: red; */
+        /* background: #2f3640; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .search-txt {
+        border: none;
+        background: none;
+        outline: none;
+        float: left;
+        padding: 0;
+        color: darkorange;
+        font-size: 16px;
+        transition: 0.4s;
+        line-height: 15px;
+        width: 0px;
+
+
+    }
+
+    .sudo {
+        padding: 34px;
+        column-gap: normal;
+        background-color: mediumpurple;
+        transition: transform.2s;
+        width: 160px;
+        height: 320px;
+        border-radius: 12px;
+    }
+
+    .sudo1 {
+
+        padding: 34px;
+        column-gap: normal;
+        background-color: orange;
+        transition: transform.2s;
+        width: 160px;
+        height: 320px;
+        padding-left: 45px;
+        border-radius: 12px;
+    }
+
+    .sudo2 {
+        padding: 34px;
+        column-gap: normal;
+        background-color: mediumpurple;
+        transition: transform.2s;
+        width: 160px;
+        height: 320px;
+        border-radius: 12px;
+    }
+
+    .sudo3 {
+        padding: 34px;
+        column-gap: normal;
+        background-color: pink;
+        transition: transform.2s;
+        width: 160px;
+        height: 320px;
+        border-radius: 12px;
+    }
+
+    .sudo4 {
+        padding: 34px;
+        column-gap: normal;
+        background-color: greenyellow;
+        transition: transform.2s;
+        width: 160px;
+        height: 320px;
+        border-radius: 12px;
+    }
+
+    .sudo5 {
+        padding: 34px;
+        column-gap: normal;
+        background-color: salmon;
+        transition: transform.2s;
+        width: 160px;
+        height: 320px;
+        border-radius: 12px;
+    }
+
+    .sudo6 {
+        padding: 34px;
+        column-gap: normal;
+        background-color: plum;
+        transition: transform.2s;
+        width: 160px;
+        height: 320px;
+        border-radius: 12px;
+    }
+
+    .sudo7 {
+        padding: 34px;
+        column-gap: normal;
+        background-color: skyblue;
+        transition: transform.2s;
+        width: 160px;
+        height: 320px;
+        border-radius: 12px;
+    }
+
+    .sudo8 {
+        padding: 34px;
+        column-gap: normal;
+        background-color: red;
+        transition: transform.2s;
+        width: 160px;
+        height: 320px;
+        border-radius: 12px;
+    }
+
+    .sudo9 {
+        padding: 34px;
+        column-gap: normal;
+        background-color: palegreen;
+        transition: transform.2s;
+        width: 160px;
+        height: 320px;
+        border-radius: 12px;
+    }
+
+
+
+
+
+    .sudo:hover {
+
+        -ms-transform: scale(4.6);
+        -webkit-transform: scale(1.4);
+        transform: scale(1.1);
+    }
+
+    .sudo1:hover {
+
+        -ms-transform: scale(4.6);
+        -webkit-transform: scale(1.4);
+        transform: scale(1.1);
+    }
+
+    .sudo2:hover {
+
+        -ms-transform: scale(4.6);
+        -webkit-transform: scale(1.4);
+        transform: scale(1.1);
+    }
+
+    .sudo3:hover {
+
+        -ms-transform: scale(4.6);
+        -webkit-transform: scale(1.4);
+        transform: scale(1.1);
+    }
+
+    .sudo4:hover {
+
+        -ms-transform: scale(4.6);
+        -webkit-transform: scale(1.4);
+        transform: scale(1.1);
+    }
+
+    .sudo5:hover {
+
+        -ms-transform: scale(4.6);
+        -webkit-transform: scale(1.4);
+        transform: scale(1.1);
+    }
+
+    .sudo6:hover {
+
+        -ms-transform: scale(4.6);
+        -webkit-transform: scale(1.4);
+        transform: scale(1.1);
+    }
+
+    .sudo7:hover {
+
+        -ms-transform: scale(4.6);
+        -webkit-transform: scale(1.4);
+        transform: scale(1.1);
+    }
+
+    .sudo8:hover {
+
+        -ms-transform: scale(4.6);
+        -webkit-transform: scale(1.4);
+        transform: scale(1.1);
+    }
+
+    .sudo9:hover {
+
+        -ms-transform: scale(4.6);
+        -webkit-transform: scale(1.4);
+        transform: scale(1.1);
+    }
+
+    columns {
+        float: left;
+    }
+
+    div {
+        float: left;
+    }
+
+    .Post10 {
+        width: 620px;
+        height: 350px;
+        background-color: pink;
+    }
+
+
+    .Post9 {
+        width: 620px;
+        height: 350px;
+        background-color: orange;
+    }
+
+    .Post9:hover {
+        -webkit-filter: brightness(0.50);
+    }
+
+
+    .Post1 {
+        width: 620px;
+        height: 350px;
+        background-color: blue;
+    }
+
+    .Post1:hover {
+        -webkit-filter: brightness(0.50);
+    }
+
+
+    .Post2 {
+        width: 620px;
+        height: 380px;
+        background-color: darkgoldenrod;
+    }
+
+    .Post2:hover {
+        -webkit-filter: brightness(0.50);
+    }
+
+    .Post3 {
+        width: 620px;
+        height: 380px;
+        background-color: plum;
+    }
+
+    .Post3:hover {
+        -webkit-filter: brightness(0.50);
+    }
+
+    .Post4 {
+
+        width: 620px;
+        height: 350px;
+        background-color: darkgreen;
+    }
+
+    .Post4:hover {
+        -webkit-filter: brightness(0.50);
+    }
+
+
+    .Post5 {
+        width: 620px;
+        height: 350px;
+        background-color: yellowgreen;
+    }
+
+    .Post5:hover {
+        -webkit-filter: brightness(0.50);
+    }
+
+    .Post8 {
+        width: 300px;
+        height: 350px;
+        background-color: white;
+    }
+
+
+    .Post6 {
+        width: 620px;
+        height: 350px;
+        background-color: yellowgreen;
+
+    }
+
+    .Post6:hover {
+        -webkit-filter: brightness(0.50);
+    }
+
+
+    .Post7 {
+        width: 600px;
+        height: 350px;
+        background-color: white;
+    }
+
+
+    img {
+        margin: 0px;
+        height: 600px;
+        width: 1200px;
+    }
+
+    .enterprice {
+        font-size: 15px;
+        height: 300px;
+        background-color: white;
+        width: 120px;
+        border-radius: 12px;
+        box-shadow: thistle;
+        border-color: tomato;
+    }
+
+    .enterprice:hover {
+        border-color: tomato;
+        box-shadow: hotpink;
+        -ms-transform: scale(4.6);
+        -webkit-transform: scale(1.4);
+        transform: scale(1.1);
+    }
+
+    .IMAGE:hover {
+        text-align: center;
+
+    }
+
+    .footer {
+        height: 150px;
+        background-color: darkgrey;
+        width: 1250px;
+
+
+    }
+
+    .AWS {
+        color: red;
+        background-color: orange;
+    }
+
+    /* 
+        .facebook {
+            background-url: 'C:\Users\HALCHAL\Desktop\PROJECT\facebook_follow_button.png';
+        } */
+
+    .IMAGE {
+        border-color: transparent;
+        border-radius: 50%;
+        height: 34px;
+    }
+
+    .tooltip1 {
+        position: relative;
+        display: inline-block;
+        /* border-bottom: 1px dotted black; */
+        /* If you want dots under the hoverable text */
+    }
+
+    /* Tooltip text */
+    .tooltip1 .tooltiptext1 {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+
+        /* Position the tooltip text */
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+
+        /* Fade in tooltip */
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    /* Tooltip arrow */
+    .tooltip1 .tooltiptext1::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip1:hover .tooltiptext1 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /*  tooltip1 closed */
+    .tooltip2 {
+        position: relative;
+        display: inline-block;
+        /* border-bottom: 1px dotted black; */
+        /* If you want dots under the hoverable text */
+    }
+
+    /* Tooltip text */
+    .tooltip2 .tooltiptext2 {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 15px 0;
+        border-radius: 6px;
+
+        /* Position the tooltip text */
+        position: absolute;
+        /* padding-left: 12px; */
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+
+        /* Fade in tooltip */
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    /* Tooltip arrow */
+    .tooltip2 .tooltiptext2::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip2:hover .tooltiptext2 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* tooltip 2 closed */
+    .tooltip1 {
+        position: relative;
+        display: inline-block;
+        /* border-bottom: 1px dotted black; */
+        /* If you want dots under the hoverable text */
+    }
+
+    /* Tooltip text */
+    .tooltip1 .tooltiptext1 {
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+
+        /* Position the tooltip text */
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+
+        /* Fade in tooltip */
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    /* Tooltip arrow */
+    .tooltip1 .tooltiptext1::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+    /* Show the tooltip text when you mouse over the tooltip container */
+    .tooltip1:hover .tooltiptext1 {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    /* fffffffffff */
+
+    .logocircle {
+        height: 5vh;
+        width: 12vh;
+    }
+
+
+    setsearchbox {
+        height: 4vh;
+    }
+
+    .Post10.details {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 10px;
+        background: transparent;
+    }
+
+
+    .Post10.details.de {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        padding: 15px;
+        color: red;
+    }
+
+    h2 {
+
+        /* animation-iteration-count: 2; */
+
+        /* width: 10ch; */
+
+        overflow: hidden;
+        white-space: nowrap;
+        font-family: consolas;
+        border-right: 4px solid black;
+        animation: text 3s;
+        animation: text 2s steps(10);
+
+        border-right: 3px solid chocolate;
+
+    }
+
+    @keyframes text {
+        from {
+            width: 0ch;
+
+        }
+
+        to {
+            width: 15ch;
+        }
+    }
+
+    @keyframes blink {
+
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 16vh;
+        }
+    }
+
+
+
+
+
+    . GalleryStore {
+        width: 100%;
+
+    }
+
+
+
+    .Gallery {
+        width: 685px;
+        margin: 20px auto;
+        overflow: hidden;
+    }
+
+    .Gallery figure {
+        position: absolute;
+        top: 0;
+        left: 50px;
+
+        width: 335px;
+
+        margin: 0;
+
+        box-shadow: 0, 0, 0, 1px rgba(255, 255, 255, 0.6);
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .Gallery>figure {
+        position: relative;
+        left: 0 !important;
+
+    }
+
+    .Gallery img {
+        display: black;
+        width: 100%;
+    }
+
+    .Gallery input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50px;
+        height: 100%;
+        cursor: pointer;
+        border: 0;
+        padding: 0;
+        opacity: 0;
+        z-index: 100;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+    }
+
+    .Gallery input:checked {
+        width: 5px;
+        left: auto;
+        right: 0px;
+    }
+
+    .Gallery input:checked~figure {
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        -ms-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        left: 300px;
+    }
+
+
+
+
+    .Gallery figcaption {
+        width: 100px;
+        height: 100%;
+        background-color: rgba(87, 73, 81, 0.1);
+        position: absolute;
+        top: 0;
+        -webkit-transition: all 0.2s linear;
+        -moz-transition: all 0.2s linear;
+        -o-transition: all 0.2s linear;
+        -ms-transition: all 0.2s linear;
+        transition: all 0.2s linear;
+
+    }
+
+    .Gallery figcaption span {
+        position: absolute;
+        top: 40%;
+        right: 20px;
+        left: 20px;
+        text-align: center;
+        background-position: absolute;
+        background: transparent;
+        line-height: 26px;
+        font-size: 18px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: 700;
+        padding: 25px;
+        color: #fff;
+
+
+    }
+
+
+    .Gallery input:checked+figcaption span {
+        -webkit-transition: all 0.4s ease-in-out 0.5s;
+        -moz-transition: all 0.4s ease-in-out 0.5s;
+        -o-transition: all 0.4s ease-in-out 0.5s;
+        -ms-transition: all 0.4s ease-in-out 0.5s;
+        transition: all 0.4s ease-in-out 0.5s;
+        opacity: 1;
+        top: 65%;
+
+    }
+
+    .affix {
+
+        top: 0;
+        width: 100%;
+        z-index: 9999 !important;
+
+
+    }
+
+    .affix+.container-fluid {
+        padding-top: 70px;
+    }
+</style>
+
+<head>
+
+
+
+
+<body>
+
+    <div class="content">
+        <div id="main">
+
+            <nav id="nav">
+                <img src="logocircle.png " class="logocircle">
+                <ul>
+                    <!-- width="10vh" height="25px" -->
+
+                    <div class="search-box">
+                        <input class="search-txt " type="text" name="" placeholder="Type To Search here">
+                        <a class="search-btn" href="index.html"></a>
+                        <!-- <i class="fas fa-search"></i> -->
+                    </div>
+
+
+
+                    <li> <a href="index.html">HOME</a>
+                    </li>
+                    <li><a href="index.html">Products</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="index.html">Testimonials</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+
+
+            </nav>
+        </div>
+    </div>
+    <script>
+        function setNewImage() {
+            document.getElementById("img1").src = "acc4.jpeg";
+        }
+
+        function setOldImage() {
+            document.getElementById("img1").src = "acc3.jpeg";
+        }
+    </script>
+
+    </head>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <center>
+        <h2> Hi folks, Welcome to Sctpl :)
+    </center>
+    <br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <section class="GalleryStore">
+        <div class="Gallery">
+            <figure><img src="acc1.jpeg" alt="image-01"><input type="radio" name="radio-set" checked="checked">
+                <figcaption><span>NatureImage</span></figcaption>
+                <figure><img src="acc2.jpeg" alt="image-02"><input type="radio" name="radio-set" checked="checked">
+                    <figcaption><span>NatureImage</span></figcaption>
+                    <figure><img src="acc3.jpeg" alt="image-03"><input type="radio" name="radio-set" checked="checked">
+                        <figcaption><span>NatureImage</span></figcaption>
+                        <figure><img src="acc4.jpeg" alt="image-04"><input type="radio" name="radio-set"
+                                checked="checked">
+                            <figcaption><span>NatureImage</span></figcaption>
+                            <figure><img src="acc5.jpeg" alt="image-05"><input type="radio" name="radio-set"
+                                    checked="checked">
+                                <figcaption><span>NatureImage</span></figcaption>
+                                <!-- <figure><img src="file:///C:/Users/HALCHAL/Desktop/PROJECT/acc6.jpg"
+                                        alt="image-06"><input type="radio" name="radio-set" checked="checked">
+                                    <figcaption><span>NatureImage</span></figcaption> -->
+                                <figure><img src="acc7.jpeg" alt="image-07"><input type="radio" name="radio-set"
+                                        checked="checked">
+                                    <figcaption><span>NatureImage</span></figcaption>
+                                </figure>
+                            </figure>
+                        </figure>
+                    </figure>
+                </figure>
+            </figure>
+            </figure>
+    </section>
+    </div>
+    <!-- <h1>FGFuiuG</h1> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <columns class="sudo">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum
+        1500s, cum incognita est a
+        printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic
+        condimentum,
+        remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis,
+        recentius
+        in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</columns>
+    <columns class="sudo1">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum
+        1500s, cum incognita est a
+        printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic
+        condimentum,
+        remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis,
+        recentius
+        in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</columns>
+
+    <columns class="sudo2">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum
+        1500s, cum incognita est a
+        printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic
+        condimentum,
+        remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis,
+        recentius
+        in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</columns>
+
+    <columns class="sudo3">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum
+        1500s, cum incognita est a
+        printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic
+        condimentum,
+        remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis,
+        recentius
+        in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</columns>
+
+
+    <columns class="sudo4">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum
+        1500s, cum incognita est a
+        printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic
+        condimentum,
+        remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis,
+        recentius
+        in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</columns>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <columns class="sudo5">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum 1500s, cum
+        incognita
+        est
+        a
+        printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic
+        condimentum,
+        remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis,
+        recentius
+        in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</columns>
+    <columns class="sudo6">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum 1500s, cum
+        incognita
+        est
+        a
+        printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic
+        condimentum,
+        remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis,
+        recentius
+        in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</columns>
+    <columns class="sudo7">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum 1500s, cum
+        incognita
+        est
+        a
+        printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic
+        condimentum,
+        remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis,
+        recentius
+        in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</columns>
+    <columns class="sudo8">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum 1500s, cum
+        incognita
+        est
+        a
+        printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic
+        condimentum,
+        remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis,
+        recentius
+        in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</columns>
+    <columns class="sudo9">Illud phantasma industria vexillum scriptor accumsan fuit unquam cum 1500s, cum
+        incognita
+        est
+        a
+        printer tulit unam, et diripienda autem genus est genus ut libero. Sed etiam in saltu electronic
+        condimentum,
+        remanserant per se unum. Is eram in 1960 popularized cum remissionis de Letraset Folia accumsan locis,
+        recentius
+        in desktop software quasi operturus Jeep libellorum ex eros etiam accumsan.</columns>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h3>
+
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry'sstandard dummy text ever since the 1500s, when an unknown printer
+            took a
+            galley of type and scrambled it to make atype specimen book. It has survived not only five centuries,
+            but
+            also the leap into electronic typesetting,remaining essentiallyunchanged. It was popularised in the
+            1960s
+            with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+            publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br><br>
+
+
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry'sstandard dummy text ever since the 1500s, when an unknown printer
+        took a
+        galley of type and scrambled it to make atype specimen book. It has survived not only five centuries,
+        but
+        also the leap into electronic typesetting,remaining essentiallyunchanged. It was popularised in the
+        1960s
+        with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+        publishing software like Aldus PageMaker including versions of Lorem Ipsum.<br><br>
+        <!--   HWERETY THE WE START TO POST -->
+
+
+        <div class="Post10">
+            <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()"
+                src="C:/Users/HALCHAL/Desktop/PROJECT/acc3.jpeg " width="620px" ,height=350px" />
+            <div class="details">
+                <div class="de">
+                    <h3> FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDHfghfhfhfghfghfghg</h3>
+                </div>
+
+            </div>
+
+
+        </div>
+        <div class="Post9">A Post about The things and Stuff
+
+
+
+        </div>
+
+        <div class="Post1">A Post about The things and Stuff
+
+
+
+        </div>
+
+        <div class="Post2">"The U.S is fast approaching $19,000,000,000,000,00"in national debt.This is
+            mathematically
+            impossible to ever pay back
+            ...even if every American was taxed at 100%"
+            <br><br>
+            <i>__charles Goyette,The Dollar Metldown<i><br><br><span style="padding-left: 78px;">
+                        *79 million baby Boomers are about to retire,pull their
+                        money out of the economy and demand their $35 Trillion Dollars in Social Security &
+                        Medicare,<span style="padding-left: 123px;"></span>Think that through...*
+
+
+                        <i><i>Robert Kiyasaki___<i><i></span>><br><br>*23.4% of Americans are Currently
+                    Unemployed...not
+                    the
+                    9.1%
+                    they'd like you to believe.*<br><br>
+                    <i>__ShadowStats.com<i></div>
+
+        <div class="Post3">The U.S is fast approaching $19,000,000,000,000,00"in national debt.This is
+            mathematically
+            impossible to ever pay back
+            ...even if every American was taxed at 100%"
+            <br><br>
+            <i>__charles Goyette,The Dollar Metldown<i><br><br><span style="padding-left: 78px;">
+                        *79 million baby Boomers are about to retire,pull their
+                        money out of the economy and demand their $35 Trillion Dollars in Social Security &
+                        Medicare,<span style="padding-left: 123px;"></span>Think that through...*
+
+
+                        <i><i>Robert Kiyasaki___<i><i></span>><br><br>*23.4% of Americans are Currently
+                    Unemployed...not
+                    the
+                    9.1%
+                    they'd like you to believe.*<br><br>
+                    <i>__ShadowStats.com<i></div>
+
+        <div class="Post4">A post about The thing and Stuff</div>
+
+        <div class="Post5">A post about The thing and Stuff</div>
+        <div class="Post6">The U.S is fast approaching $19,000,000,000,000,00"in national debt.This is
+            mathematically
+            impossible to ever pay back
+            ...even if every American was taxed at 100%"
+            <br><br>
+            <i>__charles Goyette,The Dollar Metldown<i><br><br><span style="padding-left: 78px;">
+                        *79 million baby Boomers are about to retire,pull their
+                        money out of the economy and demand their $35 Trillion Dollars in Social Security &
+                        Medicare,<span style="padding-left: 123px;"></span>Think that through...*
+
+
+                        <i><i>Robert Kiyasaki___<i><i></span>><br><br>*23.4% of Americans are Currently
+                    Unemployed...not
+                    the
+                    9.1%
+                    they'd like you to believe.*<br><br>
+                    <i>__ShadowStats.com<i></div>
+        <div class="Post7"></div><br><br><br>
+
+        <div class="Post8"></div><br>
+        <!--   HERE THE ERERRERER DFG STARTS -->
+        <center>
+            <div class="enterprice">
+                <center>
+                    Enterprise<br><br>
+                    $59<br><br>
+                    <a href="index.html"> <input type="submit" value="Sign Up" class="AWS"></input><br><br></a>
+
+                    <br>10GB Disk Space<br>
+                    <br>100GB Monthly Bandwidth<br>
+                    <br>20 Email Accounts<br>
+                    <br>Unlimited subdomain<br>
+                </center>
+            </div>
+
+
+
+            <div class="enterprice">
+                <center>
+                    Professional<br><br>
+                    $29<br><br>
+                    <a href="index.html"><input type="submit" value="Sign Up" class="AWS"></input><br><br></a>
+
+                    5GB Disk Space<br><br>
+                    50GB Monthly Bandwidth<br><br>
+                    10 Email Accounts<br><br>
+                    Unlimited subdomain<br><br>
+
+
+                </center>
+            </div>
+
+
+
+
+
+
+
+            <div class="enterprice">
+                <center>
+                    Standard<br><br>
+                    $17<br><br>
+                    <a href="index.html"><input type="submit" value="Sign Up" class="AWS"></input><br><br></a>
+                    3GB Disk Space<br><br>
+                    25GB Monthly Bandwidth<br><br>
+                    5 Email Accounts<br><br>
+                    Unlimited subdomain<br><br>
+
+
+
+
+
+                </center>
+            </div>
+            <div class="enterprice">
+                <center>
+                    Basic<br><br>
+                    $9<br><br>
+                    <a href="index.html"><input type="submit" value="Sign Up" class="AWS"></input> <br><br></a>
+                    1GB Disk Space<br><br>
+                    10GB Monthly Bandwidth<br><br>
+                    2 Email Accounts<br><br>
+                    Unlimited subdomains<br><br>
+
+
+                </center>
+            </div>
+            <br><br><br><br>
+
+
+
+
+            <br><br><br><br>
+            <div class="footer">
+
+
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <center>
+                    <div class="tooltip2"><span style="padding-left: 56vh;"></span>
+
+                        <span class="tooltiptext2" style="padding-left:12vh;">Facebook</span>
+                        <input type="image" src="facebook_follow_button.png " class="IMAGE"></div>
+                    &nbsp;&nbsp;
+                    <div class="tooltip2">
+                        <span class="tooltiptext2">Twitter</span>
+
+                        &nbsp; <input type="image" src="twitter.png" class="IMAGE">
+                    </div>
+                    <div class="tooltip2">
+                        <span class="tooltiptext2">GitHub</span>
+
+                        &nbsp;<input type="image" src="Github.png" class="IMAGE">
+                    </div>
+                    <div class="tooltip2">
+                        <span class="tooltiptext2">Dribble</span>
+
+                        &nbsp;<input type="image" src="dribble.png" class="IMAGE">
+                    </div>
+                    <div class="tooltip2">
+                        <span class="tooltiptext2">Pinterest</span>
+
+                        &nbsp;<input type="image" src="pinterest.png" class="IMAGE">
+                    </div>
+
+                    <br><br><br>
+
+
+                    Copyright &copy 2019 • Suven Consultants and technology pvt ltd • All rights reserved
+                    <!-- </center> -->
+                    <!-- </center> -->
+
+            </div>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
